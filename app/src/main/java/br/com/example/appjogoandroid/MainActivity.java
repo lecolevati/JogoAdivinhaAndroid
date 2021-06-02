@@ -29,12 +29,14 @@ public class MainActivity extends AppCompatActivity {
         int numeroGerado = (int) ((Math.random() * 100) + 1);
 
         //Ação no botão de tentativa de acerto
-        btnTentar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                jogar(etNumero, etTentativa, numeroGerado);
-            }
-        });
+//        btnTentar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                jogar(etNumero, etTentativa, numeroGerado);
+//            }
+//        });
+
+        btnTentar.setOnClickListener(v -> jogar(etNumero, etTentativa, numeroGerado));
     }
 
     private void jogar(EditText etNumero, EditText etTentativa, int numeroGerado) {
